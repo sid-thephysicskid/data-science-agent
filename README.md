@@ -1,9 +1,11 @@
 # Data Science Agent
 
 Welcome to the Data Science Agent project! 
+
 This repository is designed to explore automation of various data science tasks. 
 Currently, its focused on the process of hyperparameter optimization using a Reasoning + Action (ReAct) LLM agent in the `agent_HPO_ReAct.ipynb` notebook, which is designed to iteratively improve machine learning model performance by optimizing hyperparameters.
-This work is motivated by the following papers:
+
+This work is motivated by the papers in the `Reference` section of this README.
 
 
 ## Getting Started
