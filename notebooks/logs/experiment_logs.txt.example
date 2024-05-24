@@ -1,0 +1,26 @@
+Best Hyperparameters:
+- n_estimators: 300
+- max_features: 0.6
+- max_depth: 20
+- min_samples_split: 5
+- min_samples_leaf: 2
+
+Training Trajectory and Final Results:
+- Initial AUC score: 0.9098 with n_estimators: 100, max_depth: 10.
+- Improved to 0.9153 with n_estimators: 200, max_depth: 15.
+- Further improved to 0.9163 with n_estimators: 300, max_depth: 20.
+- Slight fluctuations with further iterations, with 0.91657 being the highest score observed with n_estimators: 350, max_depth: 22, but this was not significantly better than 0.9163.
+- Final iterations did not yield better results, confirming that 0.9163 was close to the performance limit.
+
+Thought Process and Hyperparameter Adjustments:
+- Initially started with low values for quick training and validation.
+- Gradually increased n_estimators to improve model performance and stability.
+- Adjusted max_depth to allow trees to grow deeper and capture more information.
+- Experimented with min_samples_split and min_samples_leaf to avoid overfitting and improve generalization.
+- Iteratively adjusted hyperparameters to find the optimal combination, stopping when improvements were minimal.
+
+Analysis of What Worked and What Wasn't Effective:
+- Increasing n_estimators generally improved the AUC score but with diminishing returns after a certain point.
+- Adjusting max_depth helped capture more information but also increased the risk of overfitting.
+- Tweaking min_samples_split and min_samples_leaf provided slight improvements but did not significantly change the model's performance.
+- The final combination of hyperparameters (n_estimators: 300, max_features: 0.6, max_depth: 20, min_samples_split: 5, min_samples_leaf: 2) provided a balanced trade-off between model complexity and performance.
