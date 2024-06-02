@@ -14,7 +14,7 @@ To get started with this notebook, you'll need to set up your environment and in
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/data_science_agent.git
+   git clone https://github.com/sid-thephysicskid/data-science-agent.git
    cd data_science_agent
    ```
 
