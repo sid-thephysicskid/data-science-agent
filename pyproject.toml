@@ -20,6 +20,7 @@ langchain-core = "^0.1.52"
 langchain-openai = "^0.1.7"
 python-dotenv = "^1.0.1"
 langchainhub = "^0.1.15"
+hyperopt = "^0.2.7"
 
 
 [build-system]
